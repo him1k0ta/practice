@@ -1,0 +1,79 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.central.block {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.inputPanel, .outputPanel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputPanel p, .outputPanel p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+textarea {
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3a5a8f;
+}
+
+.rot13-demo {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.rot13-demo .original {
+    color: #4a6fa5;
+    font-weight: bold;
+}
+
+.rot13-demo .rot13 {
+    color: #d35400;
+    font-weight: bold;
+}
