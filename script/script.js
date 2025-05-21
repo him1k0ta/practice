@@ -29,3 +29,6 @@ function encode() {
 
     document.getElementById('outputArea').value = output;
 }
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('inputArea').addEventListener('input', encode);
+});
