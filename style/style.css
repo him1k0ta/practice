@@ -16,7 +16,7 @@ header, footer {
     font-family: 'Consolas', monospace;
 }
 
-.centralBlock {
+.central-block {
     display: flex;
     justify-content: center;
     height: 80vh;
@@ -31,7 +31,7 @@ header, footer {
     margin-bottom: 40px;
 }
 
-.inputPanel, .outputPanel {
+.input-panel, .output-panel {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -42,19 +42,19 @@ header, footer {
     font-family: 'Consolas', monospace;
 }
 
-.inputPanel {
+.input-panel {
     background-color: #f9f9f9;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-right: 15px;
 }
 
-.outputPanel {
+.output-panel {
     border: 1px solid #8c729589;
     background-color: #fbeffb;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.inputPanel p, .outputPanel p {
+.input-panel p, .output-panel p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,13 +69,13 @@ header, footer {
     background-color: white;
 }
 
-.inputPanel p {
+.input-panel p {
     border: 2px solid #9e9e9e;
     color: #9e9e9e;
     padding: 1%;
 }
 
-.outputPanel p {
+.output-panel p {
     border: 2px solid #d0a0d0;
     background-color: #f0e0f0;
     color: #bd78bd;
@@ -97,14 +97,15 @@ textarea {
     background-color: transparent;
 }
 
-.outputPanel textarea {
+.output-panel textarea {
     color: #8c7295;
     caret-color: transparent;
 }
 
-.outputPanel textarea[readonly] {
+.output-panel textarea[readonly] {
     cursor: default;
 }
+
 .alphabet-info {
     background-color: white;
     padding: 20px;
@@ -114,11 +115,12 @@ textarea {
     max-width: 500px;
     width: 50%;
     margin-left: 1%;
-    
 }
-.alphabet-info h2{
+
+.alphabet-info h2 {
     text-align: center;
 }
+
 .alphabet-pair {
     display: flex;
     justify-content: space-around;
@@ -131,10 +133,14 @@ textarea {
     padding: 15px;
     border-radius: 10px;
     margin: 10px;
-    min-width: 200px; 
+    min-width: 200px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-right: 15px;
+}
+
+.operation-info {
+    font-size: 15px;
 }
 
 @media (max-width: 768px) {
@@ -145,7 +151,7 @@ textarea {
         display: block;
     }
     
-    .centralBlock {
+    .central-block {
         flex-direction: column;
         height: auto;
         width: 100%;
@@ -156,7 +162,7 @@ textarea {
         box-sizing: border-box;
     }
     
-    .inputPanel, .outputPanel {
+    .input-panel, .output-panel {
         width: 100%;
         margin-right: 0;
         margin-bottom: 15px;
@@ -165,11 +171,11 @@ textarea {
         flex: none;
     }
     
-    .inputPanel {
+    .input-panel {
         margin-right: 0;
     }
     
-    .inputPanel p, .outputPanel p {
+    .input-panel p, .output-panel p {
         width: auto;
         font-size: 14px;
         padding: 8px 15px;
@@ -221,11 +227,11 @@ textarea {
         padding: 10px;
     }
     
-    .centralBlock {
+    .central-block {
         padding: 10px;
     }
     
-    .inputPanel, .outputPanel {
+    .input-panel, .output-panel {
         padding: 12px;
     }
     
@@ -234,7 +240,7 @@ textarea {
         font-size: 15px;
     }
     
-    .inputPanel p, .outputPanel p {
+    .input-panel p, .output-panel p {
         font-size: 13px;
         padding: 6px 12px;
     }
