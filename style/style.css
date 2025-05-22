@@ -28,6 +28,7 @@ header, footer {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Consolas', monospace;
+    margin-bottom: 40px;
 }
 
 .inputPanel, .outputPanel {
@@ -104,29 +105,51 @@ textarea {
 .outputPanel textarea[readonly] {
     cursor: default;
 }
+.alphabet-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 40px;
+    max-width: 500px;
+    width: 50%;
+    margin-left: 1%;
+    
+}
+.alphabet-info h2{
+    text-align: center;
+}
+.alphabet-pair {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
 
-/* Медиа-запросы для адаптивности */
-@media (max-width: 768px) {
-    .central.block {
-        flex-direction: column;
-        height: auto;
-        width: 85vw;
-        padding: 15px;
-    }
-    
-    .inputPanel, .outputPanel {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-    
-    textarea {
-        height: 200px;
-    }
+.alphabet-original, .alphabet-rot13 {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 200px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
 }
 
 @media (max-width: 480px) {
-    .central.block {
+    .alphabet-info {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .alphabet-original, .alphabet-rot13 {
+        min-width: 150px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .centralBlock {
         width: 95vw;
         padding: 10px;
     }

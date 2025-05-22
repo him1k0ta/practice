@@ -2,18 +2,20 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>rot13</title>
+    <title>ROT13 Шифратор/Дешифратор</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js"></script>
 </head>
 <body>
     <header>
+        <p>ROT13 Шифратор/Дешифратор</p>
     </header>
     
     <main>
         <div class="centralBlock">
             <div class="inputPanel">
                 <p>Ввод</p>
-              <textarea id="inputArea"></textarea>
+                <textarea id="inputArea" placeholder="Введите текст для шифрования/дешифрования..."></textarea>
             </div>
 
             <div class="outputPanel">
@@ -22,10 +24,32 @@
             </div>
         </div>
     </main>
+    <div class="alphabet-info">
+        <h2>Алфавит ROT13</h2>
+        <div class="alphabet-pair">
+            <div class="alphabet-original">
+                <h3>Исходный:</h3>
+                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p>abcdefghijklmnopqrstuvwxyz</p>
+            </div>
+            <div class="alphabet-rot13">
+                <h3>Зашифрованный:</h3>
+                <p>NOPQRSTUVWXYZABCDEFGHIJKLM</p>
+                <p>nopqrstuvwxyzabcdefghijklm</p>
+            </div>
+        </div>
+        <div class="operation-info">
+            <h3>Как работает ROT13:</h3>
+            <p>Каждая буква заменяется на букву, находящуюся на 13 позиций дальше в алфавите.</p>
+            <p>Алфавит зациклен: после Z идет A.</p>
+            <p>Не-алфавитные символы остаются без изменений.</p>
+        </div>
+    </div>
 
     <footer>
+        <p>ROT13 - простой шифр подстановки</p>
     </footer>
 
-    <script src="./script/script.js"></script>
+   
 </body>
 </html>
