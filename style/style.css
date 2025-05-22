@@ -141,94 +141,121 @@ textarea {
     body {
         flex-direction: column;
         padding: 15px;
+        min-height: auto;
+        display: block;
     }
     
     .centralBlock {
         flex-direction: column;
         height: auto;
-        width: 90%;
-        margin-bottom: 30px;
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+        margin-bottom: 20px;
         padding: 15px;
+        box-sizing: border-box;
     }
     
     .inputPanel, .outputPanel {
-        width: calc(100% - 30px);
+        width: 100%;
         margin-right: 0;
         margin-bottom: 15px;
-        padding: 10px;
+        padding: 15px;
+        min-width: auto;
+        flex: none;
+    }
+    
+    .inputPanel {
+        margin-right: 0;
+    }
+    
+    .inputPanel p, .outputPanel p {
+        width: auto;
+        font-size: 14px;
+        padding: 8px 15px;
+        margin: 0 0 10px 0;
+        align-self: flex-start;
+    }
+    
+    textarea {
+        height: 200px;
+        font-size: 16px;
+        padding: 10px 15px;
     }
     
     .alphabet-info {
-        width: 90%;
-        margin: 0 auto 30px;
+        width: 100%;
+        margin: 0 auto 20px;
         padding: 15px;
         box-sizing: border-box;
+        max-width: 100%;
     }
     
     .alphabet-pair {
         flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
+        margin: 15px 0;
     }
     
     .alphabet-original, .alphabet-rot13 {
-        width: calc(100% - 20px);
-        margin: 0 0 10px 0;
-        padding: 10px;
+        width: 100%;
+        margin: 0 0 15px 0;
+        padding: 15px;
         box-sizing: border-box;
     }
     
-    .inputPanel p, .outputPanel p {
-        margin-left: 0;
-        align-self: center;
+    .alphabet-original h3, .alphabet-rot13 h3 {
+        font-size: 16px;
+    }
+    
+    .alphabet-original p, .alphabet-rot13 p {
+        font-size: 15px;
+    }
+    
+    .operation-info {
+        font-size: 15px;
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
     .centralBlock {
-        width: 95%;
         padding: 10px;
     }
     
     .inputPanel, .outputPanel {
-        width: calc(100% - 20px);
-        padding: 8px;
-    }
-    
-    .inputPanel p, .outputPanel p {
-        width: 50px;
-        font-size: 10px;
-        padding: 4px 8px;
-        margin: 5px auto;
+        padding: 12px;
     }
     
     textarea {
-        font-size: 14px;
-        padding: 0 10px;
-        height: 120px;
+        height: 180px;
+        font-size: 15px;
+    }
+    
+    .inputPanel p, .outputPanel p {
+        font-size: 13px;
+        padding: 6px 12px;
     }
     
     .alphabet-info {
-        width: 95%;
-        padding: 10px;
+        padding: 12px;
     }
     
     .alphabet-original, .alphabet-rot13 {
-        padding: 8px;
-    }
-    
-    .operation-info {
-        padding: 8px;
-        font-size: 13px;
+        padding: 12px;
     }
     
     .alphabet-original h3, .alphabet-rot13 h3 {
-        margin: 5px 0;
-        font-size: 14px;
+        font-size: 15px;
     }
     
     .alphabet-original p, .alphabet-rot13 p {
-        margin: 5px 0;
-        font-size: 13px;
+        font-size: 14px;
+    }
+    
+    .operation-info {
+        font-size: 14px;
     }
 }
