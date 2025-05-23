@@ -1,9 +1,11 @@
-function encode() {
-    let abc = 'abcdefghijklmnopqrstuvwxyz';
-    let ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let text = document.getElementById('inputArea').value;
-    let output = '';
+import { TEXTS } from './constants.js';
 
+function encode() {
+    let abc = TEXTS.LOWERCASE_ABC;
+    let ABC = TEXTS.UPPERCASE_ABC;
+    let text = document.getElementById('input-area').value;
+    let output = '';
+ 
     for (let i = 0; i < text.length; i++) {
         let char = text[i];
         let found = false;
@@ -27,8 +29,11 @@ function encode() {
         }
     }
 
-    document.getElementById('outputArea').value = output;
+    document.getElementById('output-area').value = output;
 }
+
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('inputArea').addEventListener('input', encode);
+    document.title = TEXTS.TITLE;
+
+    document.getElementById('input-area').addEventListener('input', encode);
 });

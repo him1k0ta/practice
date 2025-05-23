@@ -2,54 +2,54 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROT13 Шифратор/Дешифратор</title>
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js"></script>
+      <script src="./script/script.js"></script>
 </head>
 <body>
     <header>
-        <p>ROT13 Шифратор/Дешифратор</p>
+        {{TITLE}}
     </header>
     
     <main>
-        <div class="centralBlock">
-            <div class="inputPanel">
-                <p>Ввод</p>
-                <textarea id="inputArea" placeholder="Введите текст для шифрования/дешифрования..."></textarea>
+        <div class="central-block">
+            <div class="input-panel">
+                {{INPUT_LABEL}}
+                <textarea id="input-area" placeholder="{{INPUT_PLACEHOLDER}}"></textarea>
             </div>
 
-            <div class="outputPanel">
-                <p>Вывод</p>
-                <textarea id="outputArea" readonly></textarea>
+            <div class="output-panel">
+                {{OUTPUT_LABEL}}
+                <textarea id="output-area" readonly></textarea>
             </div>
         </div>
     </main>
     <div class="alphabet-info">
-        <h2>Алфавит ROT13</h2>
+        {{ALPHABET_TITLE}}
         <div class="alphabet-pair">
             <div class="alphabet-original">
-                <h3>Исходный:</h3>
-                <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                <p>abcdefghijklmnopqrstuvwxyz</p>
+                {{ORIGINAL_LABEL}}
+                <p>{{UPPERCASE_ABC}}</p>
+                <p>{{LOWERCASE_ABC}}</p>
             </div>
             <div class="alphabet-rot13">
-                <h3>Зашифрованный:</h3>
-                <p>NOPQRSTUVWXYZABCDEFGHIJKLM</p>
-                <p>nopqrstuvwxyzabcdefghijklm</p>
+                {{ENCRYPTED_LABEL}}
+                <p>{{UPPERCASE_ROT13}}</p>
+                <p>{{LOWERCASE_ROT13}}</p>
             </div>
         </div>
         <div class="operation-info">
-            <h3>Как работает ROT13:</h3>
-            <p>Каждая буква заменяется на букву, находящуюся на 13 позиций дальше в алфавите.</p>
-            <p>Алфавит зациклен: после Z идет A.</p>
-            <p>Не-алфавитные символы остаются без изменений.</p>
+            {{HOW_WORKS_TITLE}}
+            {{HOW_WORKS_1}}
+            {{HOW_WORKS_2}}
+            {{HOW_WORKS_3}}
         </div>
     </div>
 
     <footer>
-        <p>ROT13 - простой шифр подстановки</p>
+        {{FOOTER_TEXT}}
     </footer>
-
-   
+  
 </body>
 </html>
